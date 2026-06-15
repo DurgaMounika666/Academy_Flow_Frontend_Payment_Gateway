@@ -94,7 +94,7 @@ export function Footer() {
               </div>
               <div className="flex items-center gap-2.5">
                 <Mail className="h-4 w-4 text-indigo-400 shrink-0" />
-                <span>Email: support@academyflow.com</span>
+                <span>Email: <a href="mailto:support@academyflow.com" className="text-white hover:text-sky-400 transition-colors underline">support@academyflow.com</a></span>
               </div>
             </div>
           </div>
