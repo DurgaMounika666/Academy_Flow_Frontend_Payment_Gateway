@@ -116,6 +116,20 @@ export function Navbar({ onOpenRegister, activeStandard, onSelectStandard, logge
                 {t("home")}
               </button>
 
+              <button
+                onClick={() => navigate("/courses")}
+                className="text-sm font-semibold text-slate-700 transition hover:text-sky-500 dark:text-slate-200 dark:hover:text-sky-400"
+              >
+                {t("courses")}
+              </button>
+
+              <button
+                onClick={() => navigate("/login")}
+                className="text-sm font-semibold text-slate-700 transition hover:text-sky-500 dark:text-slate-200 dark:hover:text-sky-400"
+              >
+                {t("tutorLogin")}
+              </button>
+
               {/* Class type option dropdown */}
               <div className="relative">
                 <button
@@ -299,6 +313,20 @@ export function Navbar({ onOpenRegister, activeStandard, onSelectStandard, logge
               className="w-full text-left font-semibold text-slate-900 dark:text-white py-2 text-sm border-b border-slate-100 dark:border-slate-900"
             >
               {t("home")}
+            </button>
+
+            <button
+              onClick={() => { navigate("/courses"); setMobileMenuOpen(false); }}
+              className="w-full text-left font-semibold text-slate-900 dark:text-white py-2 text-sm border-b border-slate-100 dark:border-slate-900"
+            >
+              {t("courses")}
+            </button>
+
+            <button
+              onClick={() => { navigate("/login"); setMobileMenuOpen(false); }}
+              className="w-full text-left font-semibold text-slate-900 dark:text-white py-2 text-sm border-b border-slate-100 dark:border-slate-900"
+            >
+              {t("tutorLogin")}
             </button>
 
             <div className="py-3 border-b border-slate-100 dark:border-slate-900">

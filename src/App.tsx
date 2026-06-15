@@ -22,6 +22,7 @@ import { ClassInfo } from "./components/ClassInfo";
 import { ChatSupportWidget } from "./components/ChatSupportWidget";
 import { DemoBookingModal } from "./components/DemoBookingModal";
 import { ScrollToTop } from "./components/ScrollToTop";
+import { Courses } from "./components/Courses";
 import { useLanguage } from "./context/LanguageContext";
 import {
   INITIAL_ASSIGNMENTS, INITIAL_REVIEWS, INITIAL_MESSAGES, INITIAL_TESTS,
@@ -521,6 +522,14 @@ export default function App() {
             } />
 
             <Route path="/classes/:type" element={<ClassInfo />} />
+
+            <Route path="/courses" element={
+              <Courses
+                onOpenRegister={() => setRegisterOpen(true)}
+                onOpenDemo={() => setDemoBookingOpen(true)}
+                onSelectStandard={setActiveStandard}
+              />
+            } />
 
             <Route path="/student" element={
               renderProtectedDashboard("student", isLoadingData ? (

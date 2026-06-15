@@ -13,6 +13,7 @@ const LanguageContext = createContext<LanguageContextType | undefined>(undefined
 const english: Record<string, string> = {
   home: "Home",
   modeOfClass: "Mode of Class",
+  courses: "Courses",
   language: "Language",
   register: "Register",
   portalLogin: "Portal Login",
@@ -83,6 +84,7 @@ const english: Record<string, string> = {
 const teluguOverrides: Record<string, string> = {
   home: "\u0C39\u0C4B\u0C2E\u0C4D",
   modeOfClass: "\u0C24\u0C30\u0C17\u0C24\u0C3F \u0C35\u0C3F\u0C27\u0C3E\u0C28\u0C02",
+  courses: "\u0C15\u0C4B\u0C30\u0C4D\u0C38\u0C41\u0C32\u0C41",
   language: "\u0C2D\u0C3E\u0C37",
   register: "\u0C28\u0C2E\u0C4B\u0C26\u0C41",
   portalLogin: "\u0C2A\u0C4B\u0C30\u0C4D\u0C1F\u0C32\u0C4D \u0C32\u0C3E\u0C17\u0C3F\u0C28\u0C4D",
@@ -138,6 +140,7 @@ const teluguOverrides: Record<string, string> = {
 const hindiOverrides: Record<string, string> = {
   home: "\u0939\u094B\u092E",
   modeOfClass: "\u0915\u0915\u094D\u0937\u093E \u0915\u093E \u0924\u0930\u0940\u0915\u093E",
+  courses: "\u0915\u094B\u0930\u094D\u0938",
   language: "\u092D\u093E\u0937\u093E",
   register: "\u092A\u0902\u091C\u0940\u0915\u0930\u0923",
   portalLogin: "\u092A\u094B\u0930\u094D\u091F\u0932 \u0932\u0949\u0917\u093F\u0928",
